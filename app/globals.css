@@ -40,11 +40,15 @@
 } 
 @font-face {  
   font-family: custom4;
-  src: url(./assets/fonts/Tanker-Regular.ttf)  ; 
+  src: url(./assets/fonts/Pally-Bold.ttf )  ; 
 }  
 @font-face {  
   font-family: custom5;
   src: url(./assets/fonts/Pally-Bold.ttf)  ; 
+}  
+@font-face {  
+  font-family: custom6;
+  src: url(./assets/fonts/Boris.ttf)  ; 
 }  
 
 .custom3{
@@ -52,6 +56,9 @@
 }
 .custom5 {
     font-family: custom5;
+}
+.custom6  {
+    font-family: custom6 ;
 }
 .custom4{
     font-family: custom4 ;

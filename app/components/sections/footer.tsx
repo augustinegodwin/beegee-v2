@@ -8,15 +8,15 @@ export default function Footer() {
     <footer className="w-full bg-foreground border-t border-gray-100">
       <MaxWidthContainer>
         <div className="py-25 w-full flex gap-10 flex-col lg:flex-row items-center">
-          <div className="flex-1 gap-4  sm:w-fit w-full">
-            <div className="w-full w-full sm:max-w-100">
+          <div className="gap-4 flex-none w-full lg:flex-1">
+            <div className="lg:ml-0 m-auto w-full sm:max-w-100">
               <p className="text-lg  text-center title-font lg:text-left text-(--secondary) leading-body font-medium tracking-body">
                 Buy ,Sell, Rent your perfect marketplace
               </p>
               
             </div>
-            <Link href={"/"} className="w-fit">
-              <Image src={beegee} alt="BeeGee" className="wifull h-auto sm:w-auto sm:h-[130px]" />
+            <Link href={"/"} className="w-full block lg:w-fit">
+              <Image src={beegee} alt="BeeGee" className="w-full h-auto lg:w-auto lg:h-[130px]" />
             </Link>
           </div>
           <div className="w-fit grid grid-cols-3 gap-[34px]">

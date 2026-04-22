@@ -106,13 +106,13 @@ export default function Page() {
     <MaxWidthContainer>
       <div className="pt-18.75 w-full flex flex-col">
         {/* Hero Section */}
-        <div className="w-full mt-10 py-25 p-5 bg-(--green) border rounded-3xl relative border-gray-200">
+        <div className="w-full mt-10 py-25 p-5 bg-(--green) rounded-3xl relative">
           <div className="w-full flex justify-center text-center">
             <div className="w-full items-center justify-center max-w-150 flex flex-col gap-5">
-            <h2 className="custom4  text-[40px] sm:text-5xl lg:text-[65px] text-white leading-none tracking-header">
+            <h2 className="custom5 text-[40px] sm:text-5xl lg:text-[65px] text-white leading-none tracking-header">
                 Marketplace
               </h2>
-              <p className="text-lg text-white/75 custom3 font-medium tracking-body">
+              <p className="text-lg text-white/75 custom5 font-medium tracking-body">
                 HOME / STORE
               </p>
             </div>

@@ -94,7 +94,7 @@ export default function Page() {
                                 <label className="text-sm title-font tracking-body text-black font-medium ">Phone Number</label>
                                 <input
                                     type={"tel"}
-                                    placeholder="08123456789"
+                                    placeholder="080********"
                                     className='w-full bg-(--card) title-font text-black border-gray-200 border h-10 leading-body tracking-body rounded-xl px-3'
                                     value={phoneNumber}
                                     onChange={(e) => setPhoneNumber(e.target.value)}

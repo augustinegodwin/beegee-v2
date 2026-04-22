@@ -13,9 +13,6 @@ import { useProductStore } from "@/app/store/products.store";
 export default function Navigation() {
   const { isAuthenticated,user } = useAuthStore();
   const { setSearchQuery } =useProductStore()
-  useEffect(() => {
-    console.log("Auth State Changed:", { isAuthenticated, user });
-  }, [isAuthenticated, user]);
   return (
     <div className="w-full flex z-20 fixed  justify-center px-4 bg-white sm:px-5 py-4 items-center">
       <div className="w-full  max-w-150 lg:max-w-300 ">

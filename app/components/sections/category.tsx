@@ -11,7 +11,7 @@ export default function Category() {
     <MaxWidthContainer>
         <div className="py-25 flex flex-col justify-center gap-25">
             <SectionHeader
-                title='Explore Amazing Collections on Beegee'
+                title=' Amazing Collections on Beegee'
                 body='Select a category to find textbooks, electronics, fashion, and more from your fellow students'
                 buttonAction='/store'
                 buttonValue='View all Categories'
