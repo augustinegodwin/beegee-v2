@@ -11,7 +11,7 @@ export default function SectionHeader(data: SHProp) {
     <div className="w-full flex justify-center">
       <div className="w-full items-center justify-center max-w-180 flex flex-col gap-5">
         <div className="w-fit">
-        <h2 className="text-center custom5 text-5xl sm:text-6xl lg:text-[75px] text-(--primary) leading-none tracking-body">
+        <h2 className="text-center custom5 text-5xl sm:text-6xl lg:text-[70px] text-(--primary) leading-none tracking-body">
           {data.title}
           </h2>
         </div>

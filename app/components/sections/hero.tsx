@@ -5,7 +5,7 @@ import bottle from "../../assets/images/bottle.jpg"
 import shoe from "../../assets/images/shoe.jpg"
 import bingham from "../../assets/images/bingham.jpg" 
 import Button from '../utils/button';
-import airpod from "../../assets/images/airpods2.webp"
+import airpod from "../../assets/images/short.jpg"
 const SectionHeader =(data:any) =>{
   return (
     <div className="w-full flex justify-center">
@@ -45,7 +45,7 @@ const SectionHeader =(data:any) =>{
             />
               </div>
             </div>
-            <span className="tracking-body text-base custom6 text-(--secondary)">Over 259+ Products Uploaded</span>
+            <span className="tracking-body text-base custom6 text-(--secondary)">Over 250+ Products Uploaded</span>
           </div>
         <h2 className="text-center custom5 text-5xl sm:text-6xl lg:text-[75px] text-(--primary) leading-none tracking-[-0.06em]">
           The Largest <span className='text-green-600'>Campus</span> Marketplace
