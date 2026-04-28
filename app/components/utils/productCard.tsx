@@ -20,17 +20,17 @@ export default function ProductCard( product:Product) {
       </div>
       <div className="w-ful flex flex-col gap-2.5">
         <div className="w-full">
-          <p className="text-semibold leading-body line-clamp-2 tracking-body text-sm text-(--primary) custom3">
+          <p className=" leading-body line-clamp-2 tracking-body text-sm text-(--primary) custom3">
             {product.title}
           </p>
         </div>
         <div className="flex w-full justify-between">
           {product.availabilityStatus ? (
-            <p className="text-semibold leading-body tracking-body text-sm custom3 text-(--green)">
+            <p className=" leading-body tracking-body text-sm custom3 text-(--green)">
               Avaliable
             </p>
           ) : (
-            <p className="text-semibold leading-body tracking-body text-sm custom3 text-(--warning)">
+            <p className=" leading-body tracking-body text-sm custom3 text-(--warning)">
               Unavaliable
             </p>
           )}

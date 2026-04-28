@@ -252,7 +252,7 @@ export function UploadProductModal({ isOpen, onClose }: UploadProductModalProps)
                                     <div>
                                       <input 
                                         name="price" 
-                                        type="text" 
+                                        type="number" 
                                         placeholder="e.g. 15,000" 
                                         value={formData.price} 
                                         onChange={handleInputChange} 
@@ -271,7 +271,7 @@ export function UploadProductModal({ isOpen, onClose }: UploadProductModalProps)
                                       <div>
                                         <input 
                                           name="replacementPrice" 
-                                          type="text" 
+                                          type="number" 
                                           placeholder="45,000" 
                                           value={formData.replacementPrice} 
                                           onChange={handleInputChange} 

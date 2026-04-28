@@ -148,7 +148,7 @@ export function OrderDetailsModal({ isOpen, onClose, orderDetails }: OrderDetail
                                                     </p>
                                                     <StatusBadge status={orderDetails.status} />
                                                 </div>
-                                                <p className="text-(--secondary) inline-flex text-sm leading-body tracking-body title-font ">
+                                                <p className="text-(--secondary) inline-flex text-sm leading-body tracking-body custom2 ">
                                                     Oct 29,2026 <Dot size={14} /> {formatPrice(orderDetails.subtotal)}
                                                 </p>
                                             </div>
@@ -183,7 +183,7 @@ export function OrderDetailsModal({ isOpen, onClose, orderDetails }: OrderDetail
                                                             <span className="text-(--secondary) inline-flex text-sm leading-body tracking-body title-font ">
                                                                 Subtotal
                                                             </span>
-                                                            <span className="text-black inline-flex text-sm leading-body tracking-body title-font ">
+                                                            <span className="text-black inline-flex text-sm leading-body tracking-body custom2 ">
                                                                 {formatPrice(orderDetails.subtotal)}
                                                             </span>
 
@@ -192,7 +192,7 @@ export function OrderDetailsModal({ isOpen, onClose, orderDetails }: OrderDetail
                                                             <span className="text-(--secondary) inline-flex text-sm leading-body tracking-body title-font ">
                                                                 Shipping fee
                                                             </span>
-                                                            <span className="text-black inline-flex text-sm leading-body tracking-body title-font ">
+                                                            <span className="text-black inline-flex text-sm leading-body tracking-body custom2 ">
                                                                 {formatPrice(350.00)}
                                                             </span>
 
@@ -201,7 +201,7 @@ export function OrderDetailsModal({ isOpen, onClose, orderDetails }: OrderDetail
                                                             <span className="text-(--secondary) inline-flex text-sm leading-body tracking-body title-font ">
                                                                 Total
                                                             </span>
-                                                            <span className="text-black inline-flex text-sm leading-body tracking-body title-font ">
+                                                            <span className="text-black inline-flex text-sm leading-body tracking-body custom2 ">
                                                                 {formatPrice(orderDetails.subtotal + 350)}
                                                             </span>
 

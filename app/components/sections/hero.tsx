@@ -78,7 +78,7 @@ export default function Hero() {
         buttonValue="Join the Shopping"
       />
      
-      <div className="w-50 h-65 lg:w-60 lg:h-75 -top-20 lg:top-20 rounded-3xl -left-10 xl:left-40 shadow-xl -rotate-20 border-5 bg-(--card) border-gray-400 overflow-hidden absolute ">
+      <div className="w-50 h-65 lg:w-60 lg:h-75 -top-20 lg:top-20 rounded-3xl -left-10 xl:left-40 shadow-xl -rotate-20 border-5 bg-(--card) border-black overflow-hidden absolute ">
             <Image
               src={bottle}
               alt='bottle'
@@ -87,18 +87,22 @@ export default function Hero() {
               height={100}
                sizes="100vw"
             />
+            
       </div>
-      <div className="w-50 h-65 lg:w-60  lg:h-75 -bottom-20 lg:bottom-20 rounded-3xl bg-(--card) -right-10 xl:right-40  shadow-[-15px_20px_25px_-5px_rgba(0,0,0,0.1),-8px_8px_10px_-6px_rgba(0,0,0,0.1)] rotate-20 border-5 border-gray-400 absolute overflow-hidden">
+      <div className="w-50 h-65 lg:w-60  lg:h-75 -bottom-20 lg:bottom-20 rounded-3xl bg-(--card) -right-10 xl:right-40  shadow-[-15px_20px_25px_-5px_rgba(0,0,0,0.1),-8px_8px_10px_-6px_rgba(0,0,0,0.1)] rotate-20 border-5 border-black absolute overflow-hidden">
         <Image
               src={shoe}
-              alt='bottle'
+              alt='shoe'
               className='w-full  h-full object-cover '
               width={100}
               height={100}
                sizes="100vw"
             />
+            <div className="w-full h-10 bg-green-600 z-10">
+              <p>For Sale</p>
+            </div>
       </div>
-      <div className="w-50 h-65 lg:w-60  lg:h-75 -left-20 sm:left-20 xl:left-100 -bottom-20 rounded-3xl bg-(--card) -shadow-offset-x-10 shadow-xl rotate-10 border-5 border-gray-400 absolute overflow-hidden">
+      <div className="w-50 h-65 lg:w-60  lg:h-75 -left-20 sm:left-20 xl:left-100 -bottom-20 rounded-3xl bg-(--card) -shadow-offset-x-10 shadow-xl rotate-10 border-5 border-black absolute overflow-hidden">
         <Image
               src={airpod}
               alt='bottle'

@@ -3,23 +3,19 @@ import Button from "@/app/components/utils/button";
 import FilterCard from "@/app/components/utils/filterCard";
 import MaxWidthContainer from "@/app/components/utils/maxWidthContainer";
 import ProductCard from "@/app/components/utils/productCard";
-import category from "@/app/assets/images/filter.svg";
-import SwitchCard from "@/app/components/utils/switchCard";
 import Image from "next/image";
-import bg from "@/app/assets/images/bg.avif";
-import { ProductModal } from "@/app/components/utils/product-details";
 import CookieBanner from "@/app/components/utils/toast";
 import useFetch from "@/app/lib/useAsyncFetch";
 import { getAllProducts } from "@/app/lib/async_data";
-import Spinner from "@/app/components/utils/spinner";
 import NetworkEror from "@/app/components/utils/networkEror";
 import { UploadProductModal } from "@/app/components/utils/uploadProductsModal";
 import { useState, useMemo } from "react";
-// ... (your existing imports)
 import { Plus, ChevronDown } from "lucide-react";
 import { useAuthStore } from "@/app/store/auth.store";
 import { useRouter } from "next/navigation";
 
+import Watch from '../../assets/images/watch.jpg'
+import Shoe from '../../assets/images/thimberland.jpg'
 // Updated filter items (removed active boolean as we use state now)
 const filterItems = [
   { title: "All Items", slug: "all" },
@@ -106,18 +102,48 @@ export default function Page() {
     <MaxWidthContainer>
       <div className="pt-18.75 w-full flex flex-col">
         {/* Hero Section */}
-        <div className="w-full mt-10 py-25 p-5 bg-(--green) rounded-3xl relative">
-          <div className="w-full flex justify-center text-center">
-            <div className="w-full items-center justify-center max-w-150 flex flex-col gap-5">
-            <h2 className="custom5 text-[40px] sm:text-5xl lg:text-[65px] text-white leading-none tracking-header">
-                Marketplace
-              </h2>
-              <p className="text-lg text-white/75 custom5 font-medium tracking-body">
-                HOME / STORE
-              </p>
-            </div>
-          </div>
-        </div>
+        
+                <div className="py-25 mt-10 flex overflow-hidden relative border border-gray-200 bg-(--card) rounded-4xl flex-col justify-center gap-25">
+                  <div className="w-45 h-65 lg:w-60 lg:h-75 -top-40 sm:-top-20  rounded-3xl -left-10  shadow-xl -rotate-20 border-5 bg-(--card) border-black overflow-hidden absolute ">
+                              <Image
+                                src={Watch}
+                                alt='Short'
+                                className='w-full h-full object-cover '
+                                width={100}
+                                height={100}
+                                 sizes="100vw"
+                              />
+                        </div>
+                        <div className="w-45 h-65 lg:w-60  lg:h-75 -bottom-40 sm:-bottom-20  rounded-3xl bg-(--card) -right-10   shadow-[-15px_20px_25px_-5px_rgba(0,0,0,0.1),-8px_8px_10px_-6px_rgba(0,0,0,0.1)] rotate-20 border-5 border-black absolute overflow-hidden">
+                                <Image
+                                      src={Shoe}
+                                      alt='Shoe'
+                                      className='w-full  h-full object-cover '
+                                      width={100}
+                                      height={100}
+                                       sizes="100vw"
+                                    />
+                              </div>
+                <div className="w-full flex justify-center">
+                      <div className="w-full px-4 items-center justify-center max-w-180 flex flex-col gap-5">
+                        <div className="w-fit ">
+                        <h2 className="text-center custom5 text-5xl sm:text-6xl lg:text-[75px] text-(--primary) leading-none tracking-body">
+                          Beegee <span className='text-green-600'>Marketplace</span>
+                          </h2>
+                        </div>
+                        <div className="w-full max-w-100 flex flex-col justify-center items-center gap-5">
+                          <p className="text-center text-lg text-(--secondary) leading-body custom3 font-medium tracking-body">
+                                          Select a category to find textbooks, electronics, fashion, and more from your fellow students
+        
+                          </p>
+                         
+                           
+                          
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+            
 
         <div className="w-full py-10 lg:py-25 gap-5 flex flex-col">
           {/* Toolbar: Category Select & Buy/Sell Switch */}
