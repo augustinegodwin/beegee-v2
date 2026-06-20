@@ -9,14 +9,15 @@ import okay from '../../assets/images/studio display.webp'
 export default function Category() {
   return (
     <MaxWidthContainer>
-        <div className="py-25 flex flex-col justify-center gap-25">
+        <div className="py-25 w-full flex flex-col justify-center gap-25">
             <SectionHeader
-                title=' Amazing Collections on Beegee'
+                title={`Explore Amazing Collections on Beegee`}
                 body='Select a category to find textbooks, electronics, fashion, and more from your fellow students'
                 buttonAction='/store'
                 buttonValue='View all Categories'
+                colouredText="Collections"
             />
-            <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
                 <CategoryCard
                     image={airpods}
                     title='Electronics'

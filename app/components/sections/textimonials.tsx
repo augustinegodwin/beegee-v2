@@ -53,6 +53,7 @@ export default function Testimonials() {
                 body='Explore what buyers, sellers and people who rent on our platform are saying about beegee'
                 buttonValue='Join the testimony'
                 buttonAction='https://chat.whatsapp.com/DJ3TM9S64eW0ui5I9Zgzh6?mode=gi_t'
+                colouredText='Feedback'
             />
             <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
             {testimonials.map((testimonial, index) => (

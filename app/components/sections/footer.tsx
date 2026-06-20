@@ -21,35 +21,35 @@ export default function Footer() {
           </div>
           <div className="w-fit grid grid-cols-3 gap-[34px]">
             <div className="flex flex-col gap-4">
-              <Link href={"/"} className="text-(--secondary) text-sm title-font font-medium leading-body tracking-body">
+              <Link href={"/"} className="text-(--secondary) text-sm sm:text-lg title-font font-medium leading-body tracking-body">
                 Home
               </Link>
-              <Link href={"/store"} className="text-(--secondary) text-sm title-font font-medium leading-body tracking-body">
+              <Link href={"/store"} className="text-(--secondary) text-sm sm:text-lg title-font font-medium leading-body tracking-body">
                 Store
               </Link>
-              <Link href={"/store"} className="text-(--secondary) text-sm title-font font-medium leading-body tracking-body">
+              <Link href={"/store"} className="text-(--secondary) text-sm sm:text-lg title-font font-medium leading-body tracking-body">
                 Acount
               </Link>
             </div>
             <div className="flex flex-col gap-4">
-              <Link href={"/store"} className="text-(--secondary) text-sm title-font font-medium leading-body tracking-body">
+              <Link href={"/store"} className="text-(--secondary) text-sm sm:text-lg title-font font-medium leading-body tracking-body">
                 Support
               </Link>
-              <Link href={"/sign"} className="text-(--secondary) text-sm title-font font-medium leading-body tracking-body">
+              <Link href={"/sign"} className="text-(--secondary) text-sm sm:text-lg title-font font-medium leading-body tracking-body">
                 Sign in
               </Link>
-              <Link href={"/store"} className="text-(--secondary) text-sm title-font font-medium leading-body tracking-body">
+              <Link href={"/store"} className="text-(--secondary) text-sm sm:text-lg title-font font-medium leading-body tracking-body">
                 Terms
               </Link>
             </div>
             <div className="flex flex-col gap-4">
-              <Link href={"https://x.com"} className="text-(--secondary) text-sm title-font font-medium leading-body tracking-body">
+              <Link href={"https://x.com"} className="text-(--secondary) text-sm sm:text-lg title-font font-medium leading-body tracking-body">
                 X&nbsp;(Twitter)
               </Link>
-              <Link href={"/store"} className="text-(--secondary) text-sm title-font font-medium leading-body tracking-body">
+              <Link href={"/store"} className="text-(--secondary) text-sm sm:text-lg title-font font-medium leading-body tracking-body">
                 FaceBook
               </Link>
-              <Link href={"/store"} className="text-(--secondary) text-sm title-font font-medium leading-body tracking-body">
+              <Link href={"/store"} className="text-(--secondary) text-sm sm:text-lg title-font font-medium leading-body tracking-body">
                 Instagram
               </Link>
             </div>

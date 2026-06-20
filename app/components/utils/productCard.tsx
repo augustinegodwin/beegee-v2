@@ -12,7 +12,7 @@ export default function ProductCard( product:Product) {
         <Image
           src={product.image[0].url}
           alt={product.title}
-          className="size-full relative  rounded-xl object-cover"
+          className="size-full relative  object-cover"
           width={100}
           sizes="100vw"
           height={100}
@@ -20,7 +20,7 @@ export default function ProductCard( product:Product) {
       </div>
       <div className="w-ful flex flex-col gap-2.5">
         <div className="w-full">
-          <p className=" leading-body line-clamp-2 tracking-body text-sm text-(--primary) custom3">
+          <p className=" leading-body line-clamp-2 tracking-body lg:text-base text-sm text-(--primary) custom3">
             {product.title}
           </p>
         </div>
@@ -34,9 +34,9 @@ export default function ProductCard( product:Product) {
               Unavaliable
             </p>
           )}
-          <p className="text-semibold leading-body tracking-body tt text-sm text-(--primary)">
+          <p className="leading-body tracking-body custom7 text-sm text-(--primary)">
             {formatPrice(Number(product.price))} <i></i>
-          </p>
+          </p>  
         </div>
         <div className="flex gap-2">
           {product.availabilityStatus ? (

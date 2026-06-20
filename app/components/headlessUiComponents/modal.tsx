@@ -192,7 +192,7 @@ export default function CommandPalette() {
                       // }}
                       className="flex flex-col cursor-pointer items-center
                                      px-3 py-2 text-sm text-[--color]
-                                    aria-selected:bg-zinc-100 dark:aria-selected:bg-[hsl(var(--accent))]"
+                                    "
                     >
                       
                         <div

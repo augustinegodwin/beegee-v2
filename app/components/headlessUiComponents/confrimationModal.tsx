@@ -51,14 +51,16 @@ export function ConfirmationModal({
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <Dialog.Panel className="w-full max-w-sm transform overflow-hidden rounded-3xl bg-white p-5 sm:p-8 text-center shadow-xl transition-all">
+             <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-[28px]  bg-gray-50 p-1 text-center shadow-xl transition-all">
+              
+            <div className="p-5 rounded-[24px] sm:p-8 text-left w-full bg-white border border-gray-100">
               
               {/* Icon Section */}
               <div className="mb-6">
                 {variant === "danger" ? (
-                  <AlertCircle size={48} className="text-red-500 mx-auto" />
+                  <AlertCircle size={48} className="text-red-500 " />
                 ) : (
-                  <CheckCircle2 size={48} className="text-green-600 mx-auto" />
+                  <CheckCircle2 size={48} className="text-green-600 " />
                 )}
               </div>
               
@@ -74,7 +76,7 @@ export function ConfirmationModal({
                 {/* Cancel / Secondary Button */}
                 <button 
                   onClick={onClose}
-                  className="flex items-center space-x-2 px-6 py-2 bg-gray-200 hover:bg-gray-100 rounded-xl transition-colors"
+                  className="flex flex-1 items-center space-x-2 px-6 py-2 bg-gray-200 hover:bg-gray-100 rounded-xl transition-colors"
                 >
                   <span className="text-(--secondary) tracking-body title-font2">
                     {cancelText}
@@ -87,7 +89,7 @@ export function ConfirmationModal({
                     onConfirm();
                     onClose();
                   }}
-                  className={`flex items-center space-x-2 px-6 py-2 rounded-xl transition-colors ${
+                  className={`flex flex-1 justify-center items-center space-x-2 px-6 py-2 rounded-xl transition-colors ${
                     variant === "danger" ? "bg-red-600 hover:bg-red-700" : "bg-black hover:opacity-80"
                   }`}
                 >
@@ -96,7 +98,7 @@ export function ConfirmationModal({
                   </span>
                 </button>
               </div>
-
+                  </div>
             </Dialog.Panel>
           </Transition.Child>
         </div>

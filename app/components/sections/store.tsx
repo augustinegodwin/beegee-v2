@@ -55,10 +55,11 @@ export default function Store() {
     <MaxWidthContainer>
         <div className="py-25 flex flex-col justify-center gap-25">
             <SectionHeader
-                title='Explore Top Selling Products'
+                title="Explore Beegee's Top Selling Products"
                 body='Discover to buy, sell and rent anything on campus with ease.'
                 buttonValue='View All products'
                 buttonAction='/store'
+                colouredText='Products'
             />
              {!error && <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
                 {loading && Array(8).fill(null).map((_, index) => (

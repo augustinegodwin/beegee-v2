@@ -39,27 +39,28 @@ export function NetworkErrorModal({ isOpen, onClose, onRetry,errorTitle,errorMes
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <Dialog.Panel className="w-full max-w-sm transform overflow-hidden rounded-3xl bg-white p-5 sm:p-8 text-center shadow-xl transition-all">
+            <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-[28px]  bg-gray-50 p-1 text-center shadow-xl transition-all">
               
-              {/* YOUR ORIGINAL UI START */}
+            <div className="p-5 rounded-[24px] sm:p-8 text-left w-full bg-white border border-gray-100">
+                  {/* YOUR ORIGINAL UI START */}
               <div className="mb-6">
-                {errorMessage ? <AlertCircle size={48} className="text-(--warning) mx-auto"  /> : <WifiOffIcon size={48} className="text-(--warning) mx-auto" />}
+                {errorMessage ? <AlertCircle size={48} className="text-(--warning) mx-start"  /> : <WifiOffIcon size={48} className="text-(--warning) mx-start" />}
               </div>
               
-              <h1 className="text-xl tracking-body custom3 text-black mb-2">
+              <h1 className="text-xl tracking-body custom3 text-black mb-1">
                 {errorTitle || "Network Error"}
               </h1>
               
-              <p className="text-(--secondary) tracking-body title-font2 mb-6">
-                {errorMessage || "Unable to get products. Please check your connection."}
+              <p className="text-(--secondary) tracking-body title-font2 mb-4">
+                {errorMessage || "Unable to get products. Please check your network connection and try again."}
               </p>
               
-              <div className="flex items-center gap-5 justify-center">
+              <div className="flex items-center gap-2 justify-center">
                 <button 
                   onClick={() => {
                     onClose();
                   }}
-                  className="flex items-center space-x-2 px-4 py-2 bg-black hover:opacity-50 rounded-xl transition-colors"
+                  className="flex flex-1 justify-center items-center space-x-2 px-4 py-2 bg-black hover:opacity-50 rounded-xl transition-colors"
                 >
                   <span className="text-white tracking-body title-font2">
                     Dismiss
@@ -70,7 +71,7 @@ export function NetworkErrorModal({ isOpen, onClose, onRetry,errorTitle,errorMes
                     if (onRetry) onRetry();
                     onClose();
                   }}
-                  className="flex items-center space-x-2 px-4 py-2 bg-gray-200 hover:bg-gray-100 rounded-xl transition-colors"
+                  className="flex flex-1 items-center justify-center space-x-2 px-4 py-2 bg-gray-200 hover:bg-gray-100 rounded-xl transition-colors"
                 >
                   <RefreshCcw size={16} className="text-(--secondary)" />
                   <span className="text-(--secondary) tracking-body title-font2">
@@ -79,6 +80,7 @@ export function NetworkErrorModal({ isOpen, onClose, onRetry,errorTitle,errorMes
                 </button>
               </div>
               {/* YOUR ORIGINAL UI END */}
+            </div>
 
             </Dialog.Panel>
           </Transition.Child>

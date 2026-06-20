@@ -40,7 +40,9 @@ export function SuccessModal({ isOpen, onClose, onContinue, title, message,butto
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <Dialog.Panel className="w-full max-w-sm transform overflow-hidden rounded-3xl bg-white p-5 sm:p-8 text-center shadow-xl transition-all">
+             <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-[28px]  bg-gray-50 p-1 text-center shadow-xl transition-all">
+              
+            <div className="p-5 rounded-[24px] sm:p-8 text-left w-full bg-white border border-gray-100">
               
               {/* Icon Section - Success Green */}
               <div className="mb-6 flex justify-center">
@@ -76,7 +78,7 @@ export function SuccessModal({ isOpen, onClose, onContinue, title, message,butto
                   <ArrowRight size={18} className="text-white" />
                 </button>
               </div>
-
+                  </div>
             </Dialog.Panel>
           </Transition.Child>
         </div>

@@ -5,7 +5,7 @@ import Cookies from 'js-cookie';
 import { cookieManager } from '../components/utils/cookiesUtils';
 type AuthUser = {
   user:User,
-  ordercont:number
+  orderCount:number
 }
 type AuthState = {
     isAuthenticated: boolean;

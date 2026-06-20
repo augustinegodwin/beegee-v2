@@ -75,7 +75,7 @@ export default function Page() {
 
     return (        
         <div className="w-full min-h-screen py-25 px-4 flex justify-center items-center">
-            <div className="w-full max-w-100 bg-(--card) rounded-[30px] h-auto border border-gray-100 p-1.5">
+            <div className="w-full max-w-100 bg-(--card) rounded-[30px] h-auto border border-gray-100 p-1 ">
                 <div className="w-full h-auto flex flex-col items-center bg-[#fcfcfc] border border-gray-100 rounded-3xl py-5">
                     <div className="size-15 rounded-full border border-gray-100 z-10 bg-white -top-7.5">
                         <Link href={'/'} className="flex justify-center items-center size-full">

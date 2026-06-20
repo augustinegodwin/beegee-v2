@@ -6,13 +6,16 @@ type testiprop={
 
 export default function FeedbackCard({ message, user, status }: testiprop) {
   return (
-    <div className="w-full bg-(--card) flex flex-col p-4 sm:p-5 rounded-[20px] gap-6">
-        <div className="w-full">
-            <p className="leading-body title-font track-body font-medium text-(--secondary)">{message}</p>
+    <div className="w-full bg-green-500   flex flex-col px-[2px] py-[2px] rounded-[24px]  "> 
+    <div className="py-2.5 px-4 sm:px-5"><p className='text-sm  text-white font-medium custom3 '>{user}</p></div>
+        <div className="flex flex-col p-4 gap-4 sm:p-5 bg-gray-50 h-full rounded-[22px]">
+         <div className="w-full h-full">
+            <p className="leading-body text-base custom3 track-body font-medium text-(--secondary)">{message}</p>
         </div>
         <div className='flex flex-col'>
-            <p className='text-sm leading-5 text-(--primary) font-medium custom3 '>{user}</p>
-            <p className='text-sm leading-5 text-(--secondary) title-font'>{status}</p>
+            
+            <p className='text-sm leading-5 text-right text-(--primary) title-font'>-{status}</p>
+        </div>
         </div>
     </div>
   )

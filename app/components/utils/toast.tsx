@@ -3,7 +3,7 @@ import React from "react";
 const CookieBanner = () => {
   return (
     <div
-      className="hidden  z-10 p-4 rounded-2xl"
+      className=" fixed bottom-10 left-0  z-10 p-4 rounded-2xl"
       data-testid="cookie-banner-root"
       dir="ltr"
   
@@ -12,7 +12,7 @@ const CookieBanner = () => {
         tabIndex={0}
         data-testid="banner-card"
         aria-label="We value your privacy"
-        className="!bg-black border-gray-200 rounded-2xl shadow-lg max-w-[360px]"
+        className="border bg-gray-50 border-gray-200 rounded-2xl shadow-lg max-w-[360px]"
       >
         <div data-testid="cookie-banner-header" className="p-3 !pb-1">
           <div data-testid="cookie-banner-title" className="hidden">
@@ -31,27 +31,27 @@ const CookieBanner = () => {
 
         <div
           data-testid="cookie-banner-footer"
-          className="flex-row-reverse flex !justify-between p-3 "
+          className="flex-row-reverse flex gap-2 !justify-between p-3 "
         >
           <div
             data-testid="cookie-banner-footer-sub-group"
             className="flex flex-1 justify-between"
           >
             <button
-              className="order-2 inline-flex h-7 cursor-pointer items-center rounded-full border border-button-secondary bg-button-secondary px-3 text-xs font-medium text-button-secondary transition active:scale-98 hocus:bg-button-secondary-hover"
+              className="order-2 inline-flex h-7 cursor-pointer items-center rounded-full border  border-gray-200 px-3 text-xs font-medium text-black transition active:scale-98 hocus:bg-button-secondary-hover"
               data-testid="cookie-banner-reject-button"
             >
               Decline
             </button>
             <button
-              className="order-3 inline-flex h-7 cursor-pointer items-center rounded-full border border-button-primary bg-button-primary px-3 text-xs font-medium text-button-primary transition active:scale-98 hocus:bg-button-primary-hover"
+              className="order-3 inline-flex h-7 cursor-pointer items-center rounded-full border border-button-primary bg-black px-3 text-xs font-medium text-button-primary transition active:scale-98 hocus:bg-button-primary-hover"
               data-testid="cookie-banner-accept-button"
             >
               Refresh
             </button>
           </div>
           <button
-            className="order-1 inline-flex h-7 cursor-pointer items-center rounded-full border border-default bg-default px-3 text-xs font-medium text-default transition active:scale-98 hocus:bg-element"
+            className="order-1 inline-flex h-7 cursor-pointer items-center rounded-full border border-default bg-(--green) px-3 text-xs font-medium text-default transition active:scale-98 hocus:bg-element"
             data-testid="cookie-banner-customize-button"
           >
             Customize

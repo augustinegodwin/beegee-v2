@@ -301,31 +301,31 @@ export function UploadProductModal({ isOpen, onClose }: UploadProductModalProps)
                                           <button onClick={() => setProductVerificationStep(1)} className="text-(--green) flex gap-1 items-center tracking-body text-sm title-font2 justify-center"><PencilIcon size={14} /> Edit</button>
                                       </div>
                                       <div className="w-full flex flex-col sm:flex-row gap-5 sm:gap-10 justify-between">
-                                          <span className="text-sm tracking-body title-font2 text-(--secondary)">Product Name</span>
-                                          <span className="text-sm sm:text-right flex-1 tracking-body title-font2 text-black">{formData.title}</span>
+                                          <span className="text-base tracking-body title-font2 text-(--secondary)">Product Name</span>
+                                          <span className="text-base sm:text-right flex-1 tracking-body title-font2 text-black">{formData.title}</span>
                                       </div>
                                       <div className="w-full flex flex-col sm:flex-row gap-5 sm:gap-10 justify-between">
-                                          <span className="text-sm tracking-body title-font2 text-(--secondary)">Product Description</span>
-                                          <span className="text-sm sm:text-right flex-1 tracking-body title-font2 text-black">{formData.description}</span>
+                                          <span className="text-base tracking-body title-font2 text-(--secondary)">Product Description</span>
+                                          <span className="text-base sm:text-right flex-1 tracking-body title-font2 text-black">{formData.description}</span>
                                       </div>
                                       <div className="w-full flex flex-col sm:flex-row gap-5 sm:gap-10 justify-between">
-                                          <span className="text-sm tracking-body title-font2 text-(--secondary)">Product Category</span>
-                                          <span className="text-sm sm:text-right flex-1 tracking-body title-font2 text-black">{formData.category}</span>
+                                          <span className="text-base tracking-body title-font2 text-(--secondary)">Product Category</span>
+                                          <span className="text-base sm:text-right flex-1 tracking-body title-font2 text-black">{formData.category}</span>
                                       </div>
                                   </section>
 
                                   <section className="w-full flex rounded-2xl max-w-150 p-5 flex-col gap-5 bg-gray-100">
                                       <div className="w-full flex justify-between">
                                           <span className="text-base tracking-body custom3 text-black">Pricing details</span>
-                                          <button onClick={() => setProductVerificationStep(1)} className="text-(--green) flex gap-1 items-center tracking-body text-sm title-font2 justify-center"><PencilIcon size={14} /> Edit</button>
+                                          <button onClick={() => setProductVerificationStep(1)} className="text-(--green) flex gap-1 items-center tracking-body text-base title-font2 justify-center"><PencilIcon size={14} /> Edit</button>
                                       </div>
                                       <div className="w-full flex gap-10 justify-between">
-                                          <span className="text-sm tracking-body title-font2 text-(--secondary)">Product Cost</span>
-                                          <span className="text-sm text-right flex-1 tracking-body title-font2 text-black">N{formData.price}</span>
+                                          <span className="text-base tracking-body title-font2 text-(--secondary)">Product Cost</span>
+                                          <span className="text-base text-right flex-1 tracking-body title-font2 text-black">N{formData.price}</span>
                                       </div>
                                       <div className="w-full flex gap-10 justify-between">
-                                          <span className="text-sm tracking-body title-font2 text-(--secondary)">Replacement Cost</span>
-                                          <span className="text-sm text-right flex-1 tracking-body title-font2 text-black">N{enabled ? "0.00" : formData.replacementPrice}</span>
+                                          <span className="text-base tracking-body title-font2 text-(--secondary)">Replacement Cost</span>
+                                          <span className="text-base text-right flex-1 tracking-body title-font2 text-black">N{enabled ? "0.00" : formData.replacementPrice}</span>
                                       </div>
                                   </section>
                                 </>

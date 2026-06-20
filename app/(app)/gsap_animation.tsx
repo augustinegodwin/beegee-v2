@@ -9,8 +9,8 @@ export default function BinghamMarquee() {
   // EXACT SIZES YOU REQUESTED
   const cardWidth = 100;  // 65px width
   const cardHeight = 120; // 70px height
-  const gap = 20;        // 20px space between cards
-  const totalCards = 30; // More cards needed since they are smaller
+  const gap = 40;        // 20px space between cards
+  const totalCards = 10; // More cards needed since they are smaller
   const duration = 20;   // Speed of the flow
 
   useLayoutEffect(() => {
@@ -101,7 +101,7 @@ export default function BinghamMarquee() {
         {Array.from({ length: totalCards }).map((_, i) => (
           <div 
             key={i} 
-            className="marquee-card w-16.5 h-17.5 absolute bg-gray-200 backdrop-blur-md border border-white/30 rounded-2xl"
+            className="marquee-card w-16.5 h-17.5 absolute bg-gray-900 backdrop-blur-md border border-white/30 rounded-2xl"
           >
            
           </div>

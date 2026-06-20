@@ -1,8 +1,8 @@
 import React from 'react'
 import MaxWidthContainer from '../utils/maxWidthContainer'
 import Button from '../utils/button'
-import Short from '../../assets/images/short.jpg'
-import Shoe from '../../assets/images/shoe.jpg'
+import Short from '../../assets/images/Oakywood_Standing Desk Pro.webp'
+import Shoe from '../../assets/images/airpods.webp'
 import Image from 'next/image'
 export default function Joinus() {
   return (
@@ -31,7 +31,7 @@ export default function Joinus() {
         <div className="w-full flex justify-center">
               <div className="w-full px-4 items-center justify-center max-w-180 flex flex-col gap-5">
                 <div className="w-fit ">
-                <h2 className="text-center custom5 text-5xl sm:text-6xl lg:text-[75px] text-(--primary) leading-none tracking-body">
+                <h2 className="text-center custom8 text-5xl sm:text-6xl lg:text-[75px] text-(--primary) leading-none tracking-header">
                   Join The <span className='text-green-600'>Market</span> Today
                   </h2>
                 </div>
