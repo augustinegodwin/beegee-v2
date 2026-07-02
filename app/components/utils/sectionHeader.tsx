@@ -11,7 +11,7 @@ export default function SectionHeader(data: SHProp) {
   return (
     <div className="w-full flex justify-center">
       <div className="w-full flex items-end justify-between flex flex-col lg:flex-row gap-5">
-        <div className="max-w-150 w-full">
+        <div className="max-w-180 w-full">
         <h2 className="text-left custom8 text-4xl sm:text-6xl  text-(--primary) leading-none tracking-header">
           {data.title.includes(data.colouredText) ? (
   <>

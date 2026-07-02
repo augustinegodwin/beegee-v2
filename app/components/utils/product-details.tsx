@@ -156,7 +156,7 @@ export function ProductModal() {
                         <span className="text-(--secondary) leading-body tracking-body title-font ">
                           Description
                         </span>
-                        <p className="text-(--secondary) p-4 bg-(--card) rounded-xl leading-body tracking-body title-font ">
+                        <p className="text-(--secondary) p-4 bg-(--card) rounded-2xl leading-body tracking-body title-font ">
                           {selectedProduct.description}
                         </p>
                       </div>
@@ -232,7 +232,7 @@ export function ProductModal() {
                         <span className="text-(--secondary) leading-body tracking-body title-font ">
                           Notice
                         </span>
-                        <p className="text-(--secondary) p-4 bg-(--card) rounded-xl leading-body tracking-body title-font ">
+                        <p className="text-(--secondary) p-4 bg-(--card) rounded-2xl leading-body tracking-body title-font ">
                           Make payment to Teatflash Flw (Verified).Please note that once you proceed with payment, the lister’s phone number will be shared with you. Do not share any sensitive information such as your BVN. Your funds will not be released until the item has been collected and safely returned. Any late hour after the 1hr saving grace will incur a penalty of ₦500 per hour. For enquiries or complaints, contact us at +234 810 189 2870 or +234 904 364 7942.
                         </p>
                       </div>

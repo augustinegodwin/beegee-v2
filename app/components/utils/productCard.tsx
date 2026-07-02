@@ -24,7 +24,7 @@ export default function ProductCard( product:Product) {
             {product.title}
           </p>
         </div>
-        <div className="flex w-full justify-between">
+        <div className="flex w-full justify-between items-center">
           {product.availabilityStatus ? (
             <p className=" leading-body tracking-body text-sm custom3 text-(--green)">
               Avaliable
@@ -34,7 +34,7 @@ export default function ProductCard( product:Product) {
               Unavaliable
             </p>
           )}
-          <p className="leading-body tracking-body custom7 text-sm text-(--primary)">
+          <p className="leading-body tracking-body custom7 text-base text-(--primary)">
             {formatPrice(Number(product.price))} <i></i>
           </p>  
         </div>

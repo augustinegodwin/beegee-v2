@@ -76,50 +76,52 @@ const SectionHeader = (data: any) => {
             )}
           </div>
         </div>
-        <div className="w-full sm:w-fit flex gap-3  bg-gray-50 border border-gray-100 cursor-pointer  transition-all hover:bg-gray-100  h-fit p-5 rounded-3xl reletive flex-col">
-           
-          <div className="w-fit flex  flex-col gap-1  items-  max-w-100 relative  h-auto rounded-xl ">
-           
-          <div className="h-6 sm:h-8 w-fit flex ">
-            <div className="aspect-square h-full border-2 overflow-hidden border-white bg-white rounded-2xl">
-              <Image
-                src={bottle}
-                alt="bottle"
-                className="w-full h-full object-cover "
-                width={100}
-                height={100}
-              />
-            </div>
-            <div className="aspect-square h-full overflow-hidden border-2 border-white bg-white rounded-2xl -mx-3 z-[1]">
-              <Image
-                src={shoe}
-                alt="bottle"
-                className="w-full h-full object-cover "
-                width={100}
-                height={100}
-              />
-            </div>
-            <div className="aspect-square h-full overflow-hidden border-2 border-white bg-white rounded-2xl z-[2]">
-              <Image
-                src={airpod}
-                alt="bottle"
-                className="w-full h-full object-cover "
-                width={100}
-                height={100}
-              />
-            </div>
+        <div className="w-full sm:w-[440px] flex flex-col gap-4 bg-gray-50 border border-gray-100 p-6 rounded-3xl transition-all duration-300 hover:shadow-xl hover:border-gray-200 cursor-pointer">
+      
+      {/* Clean, Single-Line Social Proof Row */}
+      <div className="flex flex-wrap items-center gap-3">
+        
+        {/* Avatar Stack */}
+        <div className="flex -space-x-3 isolate">
+          <div className="w-8 h-8 rounded-full border-2 border-white overflow-hidden bg-gray-100 shadow-sm">
+            <Image src={bottle} alt="Gear" className="w-full h-full object-cover" width={40} height={40} />
           </div>
-          <span className="tracking-body text-base custom3 text-black  ">
-            Over 250+ Products Uploaded
+          <div className="w-8 h-8 rounded-full border-2 border-white overflow-hidden bg-gray-100 shadow-sm">
+            <Image src={shoe} alt="Gear" className="w-full h-full object-cover" width={40} height={40} />
+          </div>
+          <div className="w-8 h-8 rounded-full border-2 border-white overflow-hidden bg-gray-100 shadow-sm">
+            <Image src={airpod} alt="Gear" className="w-full h-full object-cover" width={40} height={40} />
+          </div>
+        </div>
+
+        {/* Rating & Text Grouped Together */}
+        <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+          {/* Stars */}
+          <div className="flex items-center text-amber-400">
+            {[...Array(5)].map((_, i) => (
+              <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            ))}
+          </div>
+          {/* Count label */}
+          <span className="text-xs sm:text-sm text-gray-900">
+            250+ student items listed
           </span>
         </div>
-          <div className="w-full max-w-100 flex flex-col justify-start items-start gap-5">
-            <p className="text-left text-base opacity- text-(--secondary) leading-body custom3 font-medium tracking-body">
-              The ultimate campus marketplace. Designed for durability and built for students, our platform makes it easy to upload and sell your gear in seconds.
-            </p>
-           
-          </div>
-        </div>
+      </div>
+
+      {/* Main Copy */}
+      <div className="flex flex-col gap-2">
+        <h3 className="text-lg custom8 text-gray-900 tracking-tight">
+          The ultimate campus marketplace.
+        </h3>
+        <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-medium">
+          Designed for durability and built for students. Our platform makes it easy to upload, discover, and sell your gear in seconds.
+        </p>
+      </div>
+
+    </div>
         
         
       </div>
@@ -128,7 +130,7 @@ const SectionHeader = (data: any) => {
 };
 export default function Hero() {
   return (
-    <div className="w-full flex justify-center  max-h-250 py-4  min-h-150 ">
+    <div className="w-full flex sm:px-5 justify-center  max-h-250 py-4  min-h-150 ">
       <div className="overflow-hidden w-full bri relative  px-4 h-full pt-10 sm:pb-50 max-w-[1340px] rounded-4xl   border-gray-200 flex justify-center items-start">
   <SectionHeader
           title="The Largest Campus Marketplace"
