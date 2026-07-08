@@ -20,7 +20,7 @@
 }
 @font-face {
   font-family: custom;
-    src: url(./assets/fonts/Outfit-Medium.ttf  )  ;    
+    src: url(./assets/fonts/fonnts.com-Ruddy_Regular.otf  )  ;    
 } 
 @font-face {
   font-family: custom2;
@@ -36,11 +36,11 @@
 } 
 @font-face {
   font-family: ATWTTS;  
-  src: url(./assets/fonts/Outfit-Medium.ttf  );   
+  src: url(./assets/fonts/fonnts.com-Ruddy_Regular.otf  );   
 }  
 @font-face {
   font-family: custom3;
-  src: url(./assets/fonts/Outfit-Medium.ttf  )  ; 
+  src: url(./assets/fonts/fonnts.com-Ruddy_Regular.otf  )  ; 
 }  
 @font-face {  
   font-family: custom4;
@@ -52,7 +52,7 @@
 }  
 @font-face {  
   font-family: custom6;
-  src: url(./assets/fonts/Outfit-Medium.ttf      )  ; 
+  src: url(./assets/fonts/fonnts.com-Ruddy_Regular.otf      )  ; 
 }  
 @font-face {  
   font-family: custom8;
@@ -80,7 +80,7 @@
 }
 @font-face {
   font-family: InterB;  
-    src: url(./assets/fonts/Outfit-Medium.ttf      )  ;   } 
+    src: url(./assets/fonts/fonnts.com-Ruddy_Regular.otf      )  ;   } 
 .tt{
   font-family: custom2  ;
 }
